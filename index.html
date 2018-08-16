@@ -1,28 +1,27 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="utf-8">
-<title>image_random</title>
-<script>
-function getImage(){
+  <meta charset="utf-8">
+  <title>image_random</title>
+  <script>
+    function getImage(){
   //画像ファイル名を配列で保持
-  var arr = [
-    '00001.png',
-    '00002.png',
-    '00003.png'
-  ];
-  
+      var arr = [
+        '00001.png',
+        '00002.png',
+        '00003.png'
+      ];
   //ランダムで画像ファイルを取得して表示する
-  var obj = document.getElementById("im1");
-  var a = Math.floor(Math.random() * arr.length);
-  obj.src = arr[a];
-}
-</script>
+      var obj = document.getElementById("im1");
+      var a = Math.floor(Math.random() * arr.length);
+      obj.src = arr[a];
+    }
+  </script>
 </head>
 <body>
-<h1>image_random</h1>
-<p>1枚目のフシギダネタップで2枚目がランダムに変化</p>
-<img src="00001.png" width="100" onclick="getImage()"><br />
-<img id="im1" src="00001.png" width="100">
+  <h1>image_random</h1>
+  <p>1枚目のフシギダネタップで2枚目がランダムに変化</p>
+  <img src="00001.png" width="100" onclick="getImage()"><br />
+  <img id="im1" src="00001.png" width="100">
 </body>
 </html>
